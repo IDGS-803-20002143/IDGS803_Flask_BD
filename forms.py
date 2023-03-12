@@ -1,7 +1,10 @@
-from wtforms import Form, StringField, IntegerField, EmailField, validators
-
-class UseForm(Form):
-    id=IntegerField('id')
-    nombre=StringField('nombre')
-    apellidos=StringField('apellidos')
-    email=EmailField('correo')
+from wtforms import Form
+from wtforms import StringField, IntegerField
+from wtforms import EmailField
+from wtforms import validators 
+class UserForm(Form):
+    id = IntegerField('Id')
+    nombre = StringField('Nombre')
+    apellidos = StringField('Apellidos')
+    correo = EmailField('Correo electrónico')
+    
